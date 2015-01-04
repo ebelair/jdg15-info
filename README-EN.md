@@ -12,7 +12,7 @@ The competition is to complete the code of a web app developped in Javascript wi
 La compétition consiste à compléter le code d'une application web développée JavaScript avec [node.js](http://nodejs.org). To begin, do the following:
 
 1. Download this whole GitHub repo by clicking on « Download ZIP » on the [landing page](https://github.com/ebelair/jdg15-info). 
-2. Browse to the folder `#Software` and install every provided software. You will need **node.js** and **Chrome** to properly use this project.
+2. Browse to the folder `#Software` and install **Chrome**, which is required for the project to work properly.
 3. Open the Windows command prompt (`cmd`) and navigate to the repo's folder where you saved it. `cd C:\[path_to_the_repo]\`
 4. Execute the following commands:
 

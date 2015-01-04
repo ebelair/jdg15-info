@@ -1,6 +1,6 @@
 'use strict';
 
-var challenges = require(__base + 'app/controllers/challenges_sol.js');
+var challenges = require(__base + 'app/controllers/challenges.js');
 
 module.exports = function(app) {
 	for(var c=1; c <= challenges.count; c++) {

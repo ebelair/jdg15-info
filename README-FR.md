@@ -10,7 +10,7 @@ En espionnant le comité organisateur, il apprend alors l’existence d’un log
 La compétition consiste à compléter le code d'une application web développée JavaScript avec [node.js](http://nodejs.org). Pour commencer, vous devez d'abord suivre les étapes suivantes:
 
 1. Téléchargez l'intégralité de ce repo GitHub en appuyant sur « Download ZIP » sur la [page d'accueil](https://github.com/ebelair/jdg15-info).
-2. Naviguez dans le dossier `#Software` de l'archive et installez tous les logiciels fournis. Vous aurez besoin de **node.js** et de **Chrome** pour utiliser le projet.
+2. Naviguez dans le dossier `#Software` de l'archive et installez **Chrome**, qui est nécessaire pour utiliser le projet.
 3. Ouvrez l'invite de commande Windows (`cmd`) et naviguez dans le dossier du repo à l'endroit où vous l'avez téléchargé: `cd C:\[chemin_vers_le_repo]\`
 4. Exécutez les commandes suivantes:
 
