@@ -1,0 +1,185 @@
+/* Fonts */
+@font-face {
+	font-family: "DS-Digi";
+	src: url(../fonts/ds.ttf);
+}
+@font-face {
+	font-family: "BTTF";
+	src: url(../fonts/bttf.ttf);
+}
+
+/* General styling */
+html, body {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-color: #000;
+	position: relative;
+}
+*:focus {
+	outline: 0;
+}
+
+/* Layout */
+.jdg {
+	width: 100vw; /* 1525 x 1080 */
+	height: 70vw;
+	max-height: 100vh;
+	max-width: 141vh;
+	background: url(../images/cadrans.png) top center no-repeat;
+	background-size: contain;
+	position: relative;
+	margin: auto;
+	
+	font-family: "DS-Digi";
+	font-size: 11.6vh;
+}
+@media (max-aspect-ratio: 141/100) {
+	.jdg {
+		font-size: 8.4vw !important;
+	}
+}
+.jdg span {
+	display: block;
+	position: absolute;
+}
+
+/* Contents */
+.jdg span:before {
+	position: absolute;
+	width: 100%;
+	opacity: 0.225;
+}
+.month:before { content: "888"; }
+.day:before { content: "88"; }
+.year:before { content: "8888"; }
+.hour:before { content: "88"; }
+.min:before { content: "88"; }
+
+.jdg span.ampm:before,
+.jdg span.colon:before {
+	font-family: "Arial", sans-serif;
+	content: "●";
+	font-size: 35%;
+	opacity: 1;
+}
+.timer.inactive .ampm, .timer.inactive .colon { display: none; }
+
+/* Vertical positioning */
+.timer {
+	position: absolute;
+	height: 16%;
+	width: 100%;
+}
+
+.timer1 {
+	color: #f58d20;
+	top: 10.2%;
+}
+
+.timer2 {
+	color: #51c139;
+	top: 37.6%;
+}
+
+.timer3 {
+	color: #ddc436;
+	top: 64.9%;
+}
+
+.actions {
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	font-size: 23%;
+	text-align: center;
+}
+
+.ampm { top: 18.8%; }
+.pm { top: 55%; }
+.colon1 { top: 18.8%; }
+.colon2 { top: 43.6%; }
+
+/* Horizontal positioning */
+.month { left: 8%; }
+.day { left: 26%; }
+.year { left: 39.5%; }
+.ampm { left: 62.59%; }
+.hour { left: 68.7%; }
+.colon { left: 79.25%; }
+.min { left: 83.2%; }
+
+/* Buttons styling */
+.actions button {
+	width: auto;
+	border-radius: 4px;
+	border: none;
+	margin: 0 0.75%;
+	padding: 1.2% 2.1% 0.7%;
+	
+	font-family: "BTTF";
+	text-transform: uppercase;
+	
+	/* Metal */
+	color: hsla(0,0%,20%,1);
+	text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 1px 1px;
+
+	background-color: hsl(0,0%,90%);
+	box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 2px, /* border */
+		inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+		inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+
+		hsla(0,0%, 0%,.12) 0 -1px 1px 1px, /* outer SD */
+		hsla(0,0%,100%,.2) 0  1px 1px 1px; /* outer HL */ 
+
+	transition: color .2s;
+	
+	border-radius: .5em;
+	
+	background-image:
+		-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+		-webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+		-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+
+		linear-gradient(180deg,
+			hsl(0,0%,78%)  0%, 
+			hsl(0,0%,90%) 47%, 
+			hsl(0,0%,78%) 53%,
+			hsl(0,0%,70%)100%
+		);
+}
+.actions button:hover {
+	color: hsl(210, 100%, 40%);
+	
+	text-shadow:
+		hsla(210,100%,20%,.3) 0 -1px 0,
+		hsl (210,100%,85%)    0 2px  1px,
+		hsla(200,100%,80%, 1) 0 0    5px,
+		hsla(210,100%,50%,.6) 0 0   20px;
+		
+	box-shadow: 
+		inset hsla(210,100%,30%,  1) 0  0px 0px 2px, /* border */
+		inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+		inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+
+		hsla(210,50%,40%, .12) 0 -1px 1px 1px, /* outer SD */
+		hsla(210,80%,95%, .55) 0  1px 1px 1px; /* outer HL */
+}
+.actions button:active {
+	color: hsl(210, 100%, 20%);
+	
+	text-shadow:
+		hsla(210,100%,10%,.3) 0 -1px 0,
+		hsl (210,100%,55%)    0 2px  1px,
+		hsla(200,100%,60%, 1) 0 0    5px,
+		hsla(210,100%,30%,.6) 0 0   20px;
+		
+	box-shadow: 
+		inset hsla(210,100%,30%,  1) 0  0px 0px 2px, /* border */
+		inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, /* soft SD */
+		inset hsla(210,100%,100%,.7) 0  2px 1px 7px, /* top HL */
+
+		hsla(210,50%,40%, .12) 0 -1px 1px 1px, /* outer SD */
+		hsla(210,80%,95%, .55) 0  1px 1px 1px; /* outer HL */
+}

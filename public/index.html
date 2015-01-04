@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Jeux de Génie 2015</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/machine.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<div class="jdg">
+		
+			<div class="timer timer1 inactive">
+				<span class="month"></span>
+				<span class="day"></span>
+				<span class="year"></span>
+				<span class="ampm"></span>
+				<span class="hour"></span>
+				<span class="colon colon1"></span>
+				<span class="colon colon2"></span>
+				<span class="min"></span>
+			</div>
+			
+			<div class="timer timer2 inactive">
+				<span class="month"></span>
+				<span class="day"></span>
+				<span class="year"></span>
+				<span class="ampm pm"></span>
+				<span class="hour"></span>
+				<span class="colon colon1"></span>
+				<span class="colon colon2"></span>
+				<span class="min"></span>
+			</div>
+			
+			<div class="timer timer3 inactive">
+				<span class="month"></span>
+				<span class="day"></span>
+				<span class="year"></span>
+				<span class="ampm pm"></span>
+				<span class="hour"></span>
+				<span class="colon colon1"></span>
+				<span class="colon colon2"></span>
+				<span class="min"></span>
+			</div>
+			
+			<div class="actions">
+				<button onclick="jdgClear()">Clear</button>
+				<button onclick="jdgChallenge(1)">&gt;&nbsp;&nbsp;1</button>
+				<button onclick="jdgChallenge(2)">&gt;&nbsp;&nbsp;2</button>
+				<button onclick="jdgChallenge(3)">&gt;&nbsp;&nbsp;3</button>
+				<button onclick="jdgChallenge(4)">&gt;&nbsp;&nbsp;4</button>
+				<button onclick="jdgChallenge(5)">&gt;&nbsp;&nbsp;5</button>
+				<button onclick="jdgChallenge(6)">&gt;&nbsp;&nbsp;6</button>
+			</div>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script>window._ || document.write('<script src="js/vendor/underscore-1.7.0.min.js"><\/script>')</script>
+		<script>window.moment || document.write('<script src="js/vendor/moment-2.8.4.min.js"><\/script>')</script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
