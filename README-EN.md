@@ -1,4 +1,4 @@
-# JdG2015 - CE Exam
+# Engineering Games 2015 - Computer Eng.
 
 ## Introduction
 ### Preamble
@@ -179,7 +179,7 @@ You should then be able to recover all the information through the API. This wil
 ```
 
 ***
-### Challenge $6 - Audio file (10 pts)
+### Challenge #6 - Audio file (10 pts)
 Marty recovered 3 audio samples containing the 3 last dates to enter in the time machine. However, he was told that he couldn't simply listen and enter the dates himself -- the web app must do it on its own.
 
 His friends tell him that he can use an online service, [wit.ai](https://wit.ai/) to send the audio files and receive back the parsed data. They provide him with the following information:

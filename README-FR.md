@@ -1,4 +1,4 @@
-# JdG2015 - Examen GI
+# Jeux de Génie 2015 - Génie informatique
 
 ## Introduction
 ### Préambule
@@ -148,7 +148,7 @@ UbRXgWE0v7CUBADedX/t/+t9Lp4uIlsupQfiWSg9V9Fr+c0uNm61WQ==
 
 Marty assume que vous serez en mesure de savoir quoi faire avec tout ça.
 ***
-### Défi 5 - Services web (10 pts)
+### Défi #5 - Services web (10 pts)
 Marty vient de découvrir le service de distribution de musique en ligne [Spotify](http://spotify.com). Il en profite pour écouter son album préféré, ["Greatest Hits: Huey Lewis And The News"](https://open.spotify.com/album/0u34k1ANjgZ47uQfG9yaLj).
 
 Après quelques écoutes, il réalise que la prochaine date à visiter peut être obtenue à partir de données liées à cet album. Il doit donc obtenir la date suivante:
@@ -173,7 +173,7 @@ Vous devriez être en mesure de récupérer toutes ces informations à partir de
 3: 03/06/2017 12:02
 ```
 ***
-### Défi 6 - Fichiers audio (10 pts)
+### Défi #6 - Fichiers audio (10 pts)
 Marty a récupéré 3 échantillons audio contenant les 3 dernières dates à entrer dans sa machine. Cependant, on lui dit qu'il ne peut pas les écouter et simplement entrer les dates dans la machine - ils doivent être lus directement par l'application web.
 
 Pour y arriver, ses amis lui expliquent qu'il peut utiliser un service en ligne, [wit.ai](https://wit.ai/), pour envoyer les fichiers audio et recevoir les dates au format texte. Ils lui fournissent ces informations:
